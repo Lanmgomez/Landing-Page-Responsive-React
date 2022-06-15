@@ -1,0 +1,77 @@
+
+.title {
+    text-align: center;
+    background-color: gray;
+    padding: 1em;
+    position: absolute;
+    width: 100%;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.circlesphrases{
+   margin-top: 10em;
+   width: 250px;
+   justify-content: space-between;
+   padding: 0;
+}
+
+.circles01 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: url("../../../img/hrz-2.jpg");
+    margin-bottom: 1em;
+    background-size: cover;
+}
+
+.circles02 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: url("../../../img/hrz-5.jpg");
+    margin-bottom: 1em;
+    background-size: cover;
+}
+
+.circles03 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: url("../../../img/hrz-6.jpg");
+    margin-bottom: 1em;
+    background-size: cover;
+}
+
+.circlesphrases p{
+    color: var(--text-tertiary);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    width: 200px;
+    margin-bottom: 2em;
+}
+
+/* Mobile */
+
+@media (max-width:450px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .circlesphrases{
+        margin-top: 2em;
+    }
+
+    .circles01 {
+        margin-top: 8em;
+    }
+}
+
+@media (max-width: 375px) {
+    .title, .main {
+        width: 410px;
+    }
+}

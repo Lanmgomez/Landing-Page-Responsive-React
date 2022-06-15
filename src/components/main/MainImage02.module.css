@@ -1,0 +1,50 @@
+.mainimage01 h1 {
+    text-transform: uppercase;
+    width: 350px;
+    font-weight: bold;
+    font-size: 25pt;
+}
+
+.mainimage01 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+.picimg {
+    background: url('../../../img/hrz-1.jpg');
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.mainimage01 li {
+    padding: .2em;
+}
+
+/* Mobile */
+
+@media (max-width:450px) {
+    .mainimage01 {
+        flex-direction: column-reverse;
+    }
+    .picimg {
+        width: 450px;
+    }
+}
+
+@media (max-width:375px) {
+    .picimg {
+        width: 400px;
+    }
+}
+
+@media (max-width:415px) {
+    .picimg {
+        width: 420px;
+    }
+}
